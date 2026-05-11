@@ -49,7 +49,7 @@ export async function sendContactNotification(s: ContactSubmission): Promise<voi
   ].join("\n");
 
   await resend.emails.send({
-    from: "Mended Health IT <onboarding@resend.dev>",
+    from: "Mended Health IT <contact@mendedhealthit.com>",
     to: "justincoop08@gmail.com",
     replyTo: s.email,
     subject,
