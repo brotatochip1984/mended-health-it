@@ -43,4 +43,5 @@ next-env.d.ts
 
 # claude code / agent tooling
 .claude/settings.local.json
+.claude/skills/
 .agents/

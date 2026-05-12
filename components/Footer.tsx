@@ -55,8 +55,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-700 pt-6 text-center text-xs text-slate-500">
-          &copy; {new Date().getFullYear()} Mended Health IT. All rights reserved.
+        <div className="mt-10 flex flex-col items-center gap-2 border-t border-slate-700 pt-6 text-center text-xs text-slate-500 sm:flex-row sm:justify-between sm:gap-0">
+          <p>
+            &copy; {new Date().getFullYear()} Mended Health IT. All rights
+            reserved.
+          </p>
+          <Link
+            href="/privacy"
+            className="hover:text-teal-400 transition-colors"
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
