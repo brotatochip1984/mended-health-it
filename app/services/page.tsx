@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services | Mended Health IT",
+  title: "Services",
   description:
-    "Healthcare IT staffing, recruitment, and business development services from Mended Health IT.",
+    "Healthcare IT staffing (contract, contract-to-hire, direct placement), end-to-end recruitment, and business development for HIT organizations. Epic, Cerner, MEDITECH, security, and informatics roles.",
 };
 
 const services = [

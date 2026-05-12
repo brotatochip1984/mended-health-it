@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Mended Health IT",
+  title: "Privacy Policy",
   description:
-    "How Mended Health IT collects, uses, and protects information when you visit our site.",
+    "How Mended Health IT collects, uses, and protects information when you visit our site, including analytics and B2B visitor identification.",
 };
 
 const LAST_UPDATED = "May 12, 2026";

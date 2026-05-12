@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,10 +12,63 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://mendedhealthit.com";
+
 export const metadata: Metadata = {
-  title: "Mended Health IT | Healthcare IT Staffing & Recruitment",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Mended Health IT | Healthcare IT Staffing & Recruitment",
+    template: "%s | Mended Health IT",
+  },
   description:
-    "Mended Health IT connects healthcare organizations with elite IT professionals. Staffing, recruitment, and business development for Healthcare IT.",
+    "Healthcare IT staffing, recruitment, and business development. Mended Health IT connects hospitals, health systems, and HIT vendors with vetted Epic, Cerner, MEDITECH, security, and informatics talent.",
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "Mended Health IT",
+    title: "Mended Health IT | Healthcare IT Staffing & Recruitment",
+    description:
+      "Healthcare IT staffing, recruitment, and business development. Vetted Epic, Cerner, MEDITECH, security, and informatics talent.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mended Health IT",
+    description:
+      "Healthcare IT staffing, recruitment, and business development.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Mended Health IT",
+  url: SITE_URL,
+  email: "contact@mendedhealthit.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Phoenix",
+    addressRegion: "AZ",
+    addressCountry: "US",
+  },
+  founder: {
+    "@type": "Person",
+    name: "Justin Cooper",
+  },
+  description:
+    "Healthcare IT staffing, recruitment, and business development.",
+  knowsAbout: [
+    "Healthcare IT staffing",
+    "Epic EHR recruitment",
+    "Cerner recruitment",
+    "MEDITECH recruitment",
+    "Healthcare cybersecurity",
+    "Clinical informatics",
+    "HIPAA compliance",
+  ],
 };
 
 export default function RootLayout({
@@ -30,6 +84,13 @@ export default function RootLayout({
         <Footer />
         <CookieBanner />
         <AnalyticsProvider />
+        <Script
+          id="organization-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
       </body>
     </html>
   );
