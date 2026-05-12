@@ -40,9 +40,11 @@ export default function Image() {
             lineHeight: 1.05,
             marginTop: 24,
             maxWidth: 1000,
+            display: "flex",
+            flexWrap: "wrap",
           }}
         >
-          Healthcare IT Talent,{" "}
+          <span>Healthcare IT Talent,&nbsp;</span>
           <span style={{ color: "#fbbf24" }}>Delivered.</span>
         </div>
         <div
