@@ -4,9 +4,9 @@ import { jobs } from "@/lib/jobs";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Careers | Mended Health IT",
+  title: "Open Positions",
   description:
-    "Browse open Healthcare IT positions. Mended Health IT connects qualified professionals with top healthcare organizations.",
+    "Healthcare IT jobs across Arizona and remote. Epic analysts, cybersecurity engineers, data engineers, clinical IT project managers, and more. Find your next role.",
 };
 
 export default function CareersPage() {

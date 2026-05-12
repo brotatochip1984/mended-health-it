@@ -48,8 +48,14 @@ export default function Footer() {
               Get in Touch
             </h3>
             <ul className="mt-3 space-y-2 text-sm">
-              <li>jcooper@healthtech-resources.com</li>
-              <li>(555) 000-0000</li>
+              <li>
+                <a
+                  href="mailto:contact@mendedhealthit.com"
+                  className="hover:text-teal-400 transition-colors"
+                >
+                  contact@mendedhealthit.com
+                </a>
+              </li>
               <li>Phoenix, AZ</li>
             </ul>
           </div>

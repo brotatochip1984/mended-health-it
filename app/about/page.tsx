@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About | Mended Health IT",
+  title: "About",
   description:
-    "Learn about Mended Health IT — our mission, values, and the team behind Healthcare IT staffing and recruitment.",
+    "Mended Health IT is a Phoenix-based Healthcare IT staffing firm focused on connecting hospitals, health systems, and HIT vendors with vetted technology talent. Meet the team and how we work.",
 };
 
 const values = [
