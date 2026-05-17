@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 const engagementModels = [
   {
     title: "Staff augmentation",
+    image: "/images/services/staff-augmentation.png",
     description:
       "Individual consultants, interim leadership, and specialized SMEs embedded with your team.",
     details: [
@@ -21,6 +23,7 @@ const engagementModels = [
   },
   {
     title: "Managed delivery",
+    image: "/images/services/managed-delivery.png",
     description:
       "PM-led teams executing complete initiatives — optimization, stabilization, and reporting modernization.",
     details: [
@@ -32,6 +35,7 @@ const engagementModels = [
   },
   {
     title: "Advisory services",
+    image: "/images/services/advisory-services.png",
     description:
       "Strategic assessments and operational planning before you commit budget to a direction.",
     details: [
@@ -44,6 +48,7 @@ const engagementModels = [
   },
   {
     title: "Go-live & stabilization",
+    image: "/images/services/go-live-stabilization.png",
     description:
       "On-the-ground support for the most operationally fragile moments.",
     details: [
@@ -181,8 +186,14 @@ export default function ServicesPage() {
                   </ul>
                 </div>
                 <div className="flex-1 flex items-center justify-center">
-                  <div className="h-48 w-full rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 text-sm">
-                    {s.title} illustration
+                  <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-xl bg-slate-900">
+                    <Image
+                      src={s.image}
+                      alt={`${s.title} — abstract data-visualization`}
+                      fill
+                      sizes="(min-width: 1024px) 28rem, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
