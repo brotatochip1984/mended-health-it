@@ -1,10 +1,17 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
-export const alt = "Mended Health IT — Healthcare IT Staffing & Recruitment";
+export const alt = "Mended Health IT — Healthcare Transformation & Advisory";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const bgBuffer = await readFile(
+    join(process.cwd(), "public/images/og-bg.png"),
+  );
+  const bgDataUrl = `data:image/png;base64,${bgBuffer.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -15,8 +22,10 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          background:
-            "linear-gradient(135deg, #0f766e 0%, #134e4a 50%, #0c3a37 100%)",
+          backgroundColor: "#020617",
+          backgroundImage: `url(${bgDataUrl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "right center",
           padding: "80px",
           fontFamily: "system-ui, -apple-system, sans-serif",
         }}
@@ -39,25 +48,25 @@ export default function Image() {
             fontWeight: 800,
             lineHeight: 1.05,
             marginTop: 24,
-            maxWidth: 1000,
+            maxWidth: 760,
             display: "flex",
             flexWrap: "wrap",
           }}
         >
-          <span>Healthcare IT Talent,&nbsp;</span>
-          <span style={{ color: "#fbbf24" }}>Delivered.</span>
+          <span>Healthcare IT,&nbsp;</span>
+          <span style={{ color: "#fbbf24" }}>operated.</span>
         </div>
         <div
           style={{
             fontSize: 28,
-            color: "#a7f3d0",
+            color: "#cbd5e1",
             marginTop: 32,
-            maxWidth: 900,
+            maxWidth: 720,
             lineHeight: 1.4,
           }}
         >
-          Staffing, recruitment, and business development for hospitals,
-          health systems, and HIT vendors.
+          Healthcare transformation and advisory for health systems, health
+          plans, Tribal organizations, and FQHCs.
         </div>
       </div>
     ),
