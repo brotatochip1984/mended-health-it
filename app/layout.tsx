@@ -17,24 +17,24 @@ const SITE_URL = "https://mendedhealthit.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mended Health IT | Healthcare IT Staffing & Recruitment",
+    default: "Mended Health IT | Healthcare Transformation & Advisory",
     template: "%s | Mended Health IT",
   },
   description:
-    "Healthcare IT staffing, recruitment, and business development. Mended Health IT connects hospitals, health systems, and HIT vendors with vetted Epic, Cerner, MEDITECH, security, and informatics talent.",
+    "Healthcare IT transformation, advisory, and strategic staffing. Mended Health IT supports health systems, health plans, Tribal organizations, and FQHCs through complex EHR, AI, interoperability, and revenue cycle initiatives.",
   openGraph: {
     type: "website",
     url: SITE_URL,
     siteName: "Mended Health IT",
-    title: "Mended Health IT | Healthcare IT Staffing & Recruitment",
+    title: "Mended Health IT | Healthcare Transformation & Advisory",
     description:
-      "Healthcare IT staffing, recruitment, and business development. Vetted Epic, Cerner, MEDITECH, security, and informatics talent.",
+      "Healthcare IT transformation, advisory, and strategic staffing. Operators who've been on the floor.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mended Health IT",
     description:
-      "Healthcare IT staffing, recruitment, and business development.",
+      "Healthcare IT transformation and advisory. Operators, not resume brokers.",
   },
   robots: {
     index: true,

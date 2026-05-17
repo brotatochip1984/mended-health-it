@@ -18,8 +18,9 @@ export default function Footer() {
               <span className="text-teal-400">Mended</span> Health IT
             </p>
             <p className="mt-3 text-sm leading-6">
-              Healthcare IT staffing, recruitment, and business development.
-              Connecting top talent with organizations that improve patient care.
+              Healthcare IT transformation and advisory. Supporting health
+              systems, health plans, Tribal organizations, and FQHCs through
+              complex operational change.
             </p>
           </div>
 
