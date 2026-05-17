@@ -9,7 +9,7 @@ export default function CTABanner() {
         </h2>
         <p className="mt-4 text-teal-100">
           Whether you&apos;re stabilizing a recent go-live, planning AI
-          adoption, or filling a specialized gap on a complex initiative —
+          adoption, or filling a specialized gap on a complex initiative,
           we can help.
         </p>
         <div className="mt-8 flex flex-col gap-4 justify-center sm:flex-row">

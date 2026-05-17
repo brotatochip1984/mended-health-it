@@ -16,7 +16,7 @@ const values = [
   {
     title: "Calm under pressure",
     description:
-      "Healthcare doesn't reward panic. We bring measured judgment to high-stakes situations — go-lives, denial backlogs, AI adoption decisions.",
+      "Healthcare doesn't reward panic. We bring measured judgment to high-stakes situations: go-lives, denial backlogs, AI adoption decisions.",
   },
   {
     title: "Long-term trust",
@@ -53,9 +53,9 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
               We serve healthcare systems, health plans, Tribal organizations,
-              FQHCs, and healthcare operators — environments where trust,
-              continuity, and operational depth matter more than vendor
-              cycles or marketing polish.
+              FQHCs, and healthcare operators. These are environments where
+              trust, continuity, and operational depth matter more than
+              vendor cycles or marketing polish.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
               <p className="mt-4 text-slate-600 leading-7">
                 Justin founded Mended Health IT to build the advisory firm he
                 wished existed when he was inside healthcare delivery
-                environments — one focused on operational continuity,
+                environments: a firm focused on operational continuity,
                 executive-level execution, and long-term trust rather than
                 transactional placements. He works directly with CIOs,
                 CMIOs, and revenue cycle leadership on the engagements where

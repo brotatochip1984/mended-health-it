@@ -32,7 +32,7 @@ export async function sendContactNotification(s: ContactSubmission): Promise<voi
   const resend = getResend();
   const inquiry = INQUIRY_LABEL[s.inquiryType] ?? s.inquiryType;
 
-  const subject = `New contact: ${inquiry} — ${s.name}`;
+  const subject = `New ${inquiry} contact from ${s.name}`;
   const text = [
     `Name:    ${s.name}`,
     `Email:   ${s.email}`,

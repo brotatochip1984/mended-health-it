@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Consultants",
   description:
-    "Healthcare IT consultants and operators — work with Mended Health IT on EHR, AI, interoperability, revenue cycle, and stabilization engagements.",
+    "Healthcare IT consultants and operators. Work with Mended Health IT on EHR, AI, interoperability, revenue cycle, and stabilization engagements.",
 };
 
 export default function CareersPage() {
@@ -17,7 +17,7 @@ export default function CareersPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h1 className="text-4xl font-bold">Work with us</h1>
           <p className="mt-4 max-w-2xl text-lg text-teal-100">
-            Healthcare IT operators — consultants, post-go-live veterans,
+            Healthcare IT operators: consultants, post-go-live veterans,
             informatics leaders. We engage with people who bring more than a
             resume to every engagement.
           </p>
@@ -51,7 +51,7 @@ export default function CareersPage() {
             Working with Mended Health IT isn&apos;t about finding the next
             gig. We build long-term relationships with operators who treat
             every engagement as their own. Send your background and a note
-            about what you do best — we&apos;ll be in touch when the work
+            about what you do best. We&apos;ll be in touch when the work
             matches.
           </p>
           <Link

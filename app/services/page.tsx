@@ -25,7 +25,7 @@ const engagementModels = [
     title: "Managed delivery",
     image: "/images/services/managed-delivery.png",
     description:
-      "PM-led teams executing complete initiatives — optimization, stabilization, and reporting modernization.",
+      "PM-led teams executing complete initiatives: optimization, stabilization, and reporting modernization.",
     details: [
       "Team-based execution under a single point of accountability",
       "Optimization initiatives across Epic, Cerner, MEDITECH, and NextGen",
@@ -39,7 +39,7 @@ const engagementModels = [
     description:
       "Strategic assessments and operational planning before you commit budget to a direction.",
     details: [
-      "AI readiness assessments — governance, workflows, data infrastructure",
+      "AI readiness assessments: governance, workflows, data infrastructure",
       "EHR optimization reviews",
       "Revenue cycle and denials assessments",
       "Interoperability strategy (CMS-0057-F, TEFCA, FHIR)",
@@ -189,7 +189,7 @@ export default function ServicesPage() {
                   <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-xl bg-slate-900">
                     <Image
                       src={s.image}
-                      alt={`${s.title} — abstract data-visualization`}
+                      alt={`${s.title}, abstract data-visualization`}
                       fill
                       sizes="(min-width: 1024px) 28rem, (min-width: 768px) 50vw, 100vw"
                       className="object-cover"
@@ -209,7 +209,7 @@ export default function ServicesPage() {
             Strategic focus areas
           </h2>
           <p className="mt-3 text-center text-slate-600">
-            Where healthcare IT is moving — and where we work.
+            Where healthcare IT is moving, and where we work.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
             {focusAreas.map((f) => (
@@ -232,7 +232,7 @@ export default function ServicesPage() {
             Platform depth
           </h2>
           <p className="mt-3 text-center text-slate-600">
-            The systems we work with — and the workflows behind them.
+            The systems we work with, and the workflows behind them.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
             {platforms.map((p) => (

@@ -28,7 +28,7 @@ export default function Hero() {
           <p className="mt-6 text-lg leading-8 text-slate-200">
             We support healthcare systems, health plans, Tribal organizations,
             and FQHCs through complex EHR transitions, AI adoption,
-            interoperability, and revenue cycle pressure — with operators
+            interoperability, and revenue cycle pressure. With operators
             who&apos;ve actually been on the floor.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
