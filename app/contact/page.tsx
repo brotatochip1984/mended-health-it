@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach Mended Health IT about Healthcare IT staffing, recruitment, or business development. Phoenix-based, serving clients nationwide. We respond within one business day.",
+    "Reach Mended Health IT about healthcare transformation, advisory, staffing, or stabilization engagements. Phoenix-based, supporting healthcare operators nationwide. We respond within one business day.",
 };
 
 export default async function ContactPage({

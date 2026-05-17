@@ -4,24 +4,24 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mended Health IT is a Phoenix-based Healthcare IT staffing firm focused on connecting hospitals, health systems, and HIT vendors with vetted technology talent. Meet the team and how we work.",
+    "Mended Health IT is a healthcare transformation and advisory organization helping health systems, health plans, Tribal organizations, and FQHCs through complex operational change.",
 };
 
 const values = [
   {
-    title: "Integrity",
+    title: "Operationally informed",
     description:
-      "We do what we say. Every candidate is vetted, every timeline is honest, and every relationship is built on trust.",
+      "Our consultants have been on the floor in command centers, hypercare environments, and revenue cycle operations. They understand what 'works in real life' looks like.",
   },
   {
-    title: "Expertise",
+    title: "Calm under pressure",
     description:
-      "Healthcare IT is all we do. We understand EHR workflows, compliance requirements, and the talent landscape inside and out.",
+      "Healthcare doesn't reward panic. We bring measured judgment to high-stakes situations — go-lives, denial backlogs, AI adoption decisions.",
   },
   {
-    title: "Partnership",
+    title: "Long-term trust",
     description:
-      "We succeed when you succeed. We treat every engagement as a long-term partnership, not a transaction.",
+      "We optimize for partnerships that last years, not transactions that close this quarter. The right consultant matters more than placement volume.",
   },
 ];
 
@@ -33,8 +33,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h1 className="text-4xl font-bold">About Mended Health IT</h1>
           <p className="mt-4 max-w-2xl text-lg text-teal-100">
-            Bridging the gap between healthcare organizations and the IT talent
-            they need to deliver better patient care.
+            A healthcare transformation and advisory organization. We support
+            the operational complexity behind technology change.
           </p>
         </div>
       </section>
@@ -43,13 +43,19 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-800">Our Mission</h2>
+            <h2 className="text-2xl font-bold text-slate-800">Our work</h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              Mended Health IT exists to strengthen healthcare by connecting
-              organizations with the technology professionals who keep systems
-              running, data secure, and care accessible. We believe every
-              hospital, clinic, and health system deserves an IT team that
-              understands the stakes.
+              Healthcare delivery doesn&apos;t pause for project plans. We
+              work with that reality, not against it. Our engagements focus on
+              EHR transitions, AI adoption, revenue cycle pressure,
+              interoperability mandates, and the staffing gaps that emerge
+              when all of the above land on the same operational leaders.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              We serve healthcare systems, health plans, Tribal organizations,
+              FQHCs, and healthcare operators — environments where trust,
+              continuity, and operational depth matter more than vendor
+              cycles or marketing polish.
             </p>
           </div>
         </div>
@@ -63,15 +69,18 @@ export default function AboutPage() {
               JC
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-slate-800">Justin Cooper</h2>
+              <h2 className="text-2xl font-bold text-slate-800">
+                Justin Cooper
+              </h2>
               <p className="text-sm font-medium text-teal-700">Founder</p>
               <p className="mt-4 text-slate-600 leading-7">
-                With deep experience in Healthcare IT and a passion for
-                connecting people with meaningful work, Justin founded Mended
-                Health IT to address the growing demand for specialized IT talent
-                in healthcare. His hands-on approach to staffing, recruitment,
-                and business development ensures every client and candidate gets
-                the attention they deserve.
+                Justin founded Mended Health IT to build the advisory firm he
+                wished existed when he was inside healthcare delivery
+                environments — one focused on operational continuity,
+                executive-level execution, and long-term trust rather than
+                transactional placements. He works directly with CIOs,
+                CMIOs, and revenue cycle leadership on the engagements where
+                outcomes matter most.
               </p>
             </div>
           </div>
@@ -82,12 +91,14 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold text-slate-800">
-            Our Values
+            How we operate
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
             {values.map((v) => (
               <div key={v.title} className="text-center">
-                <h3 className="text-lg font-semibold text-teal-700">{v.title}</h3>
+                <h3 className="text-lg font-semibold text-teal-700">
+                  {v.title}
+                </h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">
                   {v.description}
                 </p>
