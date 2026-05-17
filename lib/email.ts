@@ -26,6 +26,11 @@ type ContactSubmission = {
   inquiryType: string;
   subject?: string | null;
   message: string;
+  linkedinUrl?: string | null;
+  attachment?: {
+    filename: string;
+    content: Buffer;
+  } | null;
 };
 
 export async function sendContactNotification(s: ContactSubmission): Promise<void> {
@@ -34,12 +39,14 @@ export async function sendContactNotification(s: ContactSubmission): Promise<voi
 
   const subject = `New ${inquiry} contact from ${s.name}`;
   const text = [
-    `Name:    ${s.name}`,
-    `Email:   ${s.email}`,
-    `Phone:   ${s.phone || "—"}`,
-    `Company: ${s.company || "—"}`,
-    `Inquiry: ${inquiry}`,
-    `Subject: ${s.subject || "—"}`,
+    `Name:     ${s.name}`,
+    `Email:    ${s.email}`,
+    `Phone:    ${s.phone || "—"}`,
+    `Company:  ${s.company || "—"}`,
+    `Inquiry:  ${inquiry}`,
+    `Subject:  ${s.subject || "—"}`,
+    `LinkedIn: ${s.linkedinUrl || "—"}`,
+    `Resume:   ${s.attachment ? s.attachment.filename + " (attached)" : "—"}`,
     ``,
     `Message:`,
     s.message,
@@ -54,5 +61,13 @@ export async function sendContactNotification(s: ContactSubmission): Promise<voi
     replyTo: s.email,
     subject,
     text,
+    attachments: s.attachment
+      ? [
+          {
+            filename: s.attachment.filename,
+            content: s.attachment.content,
+          },
+        ]
+      : undefined,
   });
 }
