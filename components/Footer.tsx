@@ -1,12 +1,9 @@
 import Link from "next/link";
 
 const quickLinks = [
-  { href: "/assessment", label: "AI Readiness Assessment" },
-  { href: "/vendors", label: "Vendor Landscape" },
-  { href: "/opportunities", label: "Opportunity Matrix" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/research", label: "Research & Trust" },
+  { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -21,9 +18,9 @@ export default function Footer() {
               <span className="text-teal-400">Mended</span> Health IT
             </p>
             <p className="mt-3 text-sm leading-6">
-              Independent Healthcare AI Advisory and Brokerage. Helping
-              organizations evaluate AI readiness, select trusted vendors, govern
-              risk, and build implementation teams.
+              Healthcare IT transformation and advisory. Supporting health
+              systems, health plans, Tribal organizations, and FQHCs through
+              complex operational change.
             </p>
           </div>
 

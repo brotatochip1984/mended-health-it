@@ -1,77 +1,36 @@
-# Mended Health IT — Independent Healthcare AI Advisory & Brokerage
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A Next.js 16 (App Router) marketing site and product for an independent,
-vendor-neutral Healthcare AI Advisory practice. It includes a scored AI Readiness
-Assessment, a vendor landscape, a department-level opportunity matrix, advisory
-packages and pricing, a trusted-source research library, and a readiness-call
-contact flow.
+## Getting Started
 
-## Tech stack
-
-- Next.js 16 (App Router) + React 19
-- TypeScript
-- Tailwind CSS v4
-- JSON data files in `data/` drive the assessment, vendors, matrix, pricing, and research
-- Supabase (contact submissions storage) and Resend (email notifications) for the contact form
-
-## Getting started
+First, run the development server:
 
 ```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm run build   # production build
-npm run lint    # eslint
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Environment variables
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-The marketing pages and the assessment work with no environment variables. The
-contact form's backend (storage + email) needs the values in `.env.example`:
+## Learn More
 
-- `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` — store submissions
-- `RESEND_API_KEY` — send the notification email
+To learn more about Next.js, take a look at the following resources:
 
-Copy `.env.example` to `.env.local` and fill in values to enable the contact API.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Project structure
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```
-app/
-  page.tsx           Home: positioning, what we solve, why now, services, differentiators
-  assessment/        AI Readiness Assessment (interactive, scored, exportable)
-  vendors/           Healthcare AI vendor landscape (category map)
-  opportunities/     Department-by-department AI Opportunity Matrix
-  pricing/           Advisory packages, pricing, and vendor partnership model
-  research/          Trusted-source research library
-  about/             About the practice and founder
-  contact/           Schedule a Healthcare AI Readiness Call
-  api/contact/       Contact submission endpoint (Supabase + Resend)
-components/          Reusable UI (Navbar, Footer, Hero, AssessmentClient, ContactForm, ...)
-data/               JSON content (assessment schema, vendors, matrix, pricing, research, content calendar)
-lib/
-  assessment.ts      Assessment schema typing + helpers
-  scoring.ts         Pure scoring engine: score, tier, top risks, next steps, suggested package
-docs/
-  research_sources.md  Source notes and citation discipline behind public claims
-```
+## Deploy on Vercel
 
-## The AI Readiness Assessment
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Ten weighted categories, each scored 1–5 per question.
-- `lib/scoring.ts` normalizes responses to a 0–100 readiness score, resolves a
-  tier, surfaces the highest-risk categories, and recommends next steps and an
-  advisory package.
-- Responses persist to `localStorage` and can be exported as JSON or CSV.
-- It is a directional self-assessment, not legal, clinical, or compliance advice.
-
-## Content and trust rules
-
-- Vendor names are representative category examples, not endorsements, and
-  require independent due diligence.
-- Every public statistic traces to a source in `docs/research_sources.md`.
-- No fabricated logos, testimonials, partnerships, or statistics.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Mended Health IT | Independent Healthcare AI Advisory & Brokerage";
+export const alt = "Mended Health IT | Healthcare Transformation & Advisory";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -53,8 +53,8 @@ export default async function Image() {
             flexWrap: "wrap",
           }}
         >
-          <span>Healthcare AI,&nbsp;</span>
-          <span style={{ color: "#fbbf24" }}>advised.</span>
+          <span>Healthcare IT,&nbsp;</span>
+          <span style={{ color: "#fbbf24" }}>operated.</span>
         </div>
         <div
           style={{
@@ -65,8 +65,8 @@ export default async function Image() {
             lineHeight: 1.4,
           }}
         >
-          Independent, vendor-neutral AI readiness, vendor selection,
-          governance, and implementation advisory.
+          Healthcare transformation and advisory for health systems, health
+          plans, Tribal organizations, and FQHCs.
         </div>
       </div>
     ),
