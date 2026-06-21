@@ -17,24 +17,24 @@ const SITE_URL = "https://mendedhealthit.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mended Health IT | Healthcare Transformation & Advisory",
+    default: "Mended Health IT | Independent Healthcare AI Advisory & Brokerage",
     template: "%s | Mended Health IT",
   },
   description:
-    "Healthcare IT transformation, advisory, and strategic staffing. Mended Health IT supports health systems, health plans, Tribal organizations, and FQHCs through complex EHR, AI, interoperability, and revenue cycle initiatives.",
+    "Independent, vendor-neutral Healthcare AI Advisory and Brokerage. We help healthcare organizations evaluate AI readiness, select trusted vendors, govern risk, and build implementation teams.",
   openGraph: {
     type: "website",
     url: SITE_URL,
     siteName: "Mended Health IT",
-    title: "Mended Health IT | Healthcare Transformation & Advisory",
+    title: "Mended Health IT | Independent Healthcare AI Advisory & Brokerage",
     description:
-      "Healthcare IT transformation, advisory, and strategic staffing. Operators who've been on the floor.",
+      "Vendor-neutral AI readiness, vendor selection, governance, and implementation advisory for healthcare.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mended Health IT",
     description:
-      "Healthcare IT transformation and advisory. Operators, not resume brokers.",
+      "Independent Healthcare AI Advisory and Brokerage. Vendor-neutral by design.",
   },
   robots: {
     index: true,
@@ -59,15 +59,15 @@ const organizationJsonLd = {
     name: "Justin Cooper",
   },
   description:
-    "Healthcare IT staffing, recruitment, and business development.",
+    "Independent Healthcare AI Advisory and Brokerage.",
   knowsAbout: [
-    "Healthcare IT staffing",
-    "Epic EHR recruitment",
-    "Cerner recruitment",
-    "MEDITECH recruitment",
-    "Healthcare cybersecurity",
+    "Healthcare AI readiness",
+    "Healthcare AI governance",
+    "AI vendor selection",
     "Clinical informatics",
-    "HIPAA compliance",
+    "Ambient clinical documentation",
+    "Revenue cycle AI",
+    "AI implementation planning",
   ],
 };
 

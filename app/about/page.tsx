@@ -4,24 +4,24 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mended Health IT is a healthcare transformation and advisory organization helping health systems, health plans, Tribal organizations, and FQHCs through complex operational change.",
+    "Mended Health IT is an independent Healthcare AI Advisory and Brokerage practice. We help organizations evaluate AI readiness, select trusted vendors, govern risk, and build implementation teams.",
 };
 
 const values = [
   {
-    title: "Operationally informed",
+    title: "Independent and vendor-neutral",
     description:
-      "Our consultants have been on the floor in command centers, hypercare environments, and revenue cycle operations. They understand what 'works in real life' looks like.",
+      "Our advice is not for sale. Assessments stay independent from referral economics, and any partnership is disclosed.",
   },
   {
-    title: "Calm under pressure",
+    title: "Evidence over hype",
     description:
-      "Healthcare doesn't reward panic. We bring measured judgment to high-stakes situations: go-lives, denial backlogs, AI adoption decisions.",
+      "We make claims we can source. Every public statistic traces to a trusted healthcare, clinical, legal, or market reference.",
   },
   {
-    title: "Long-term trust",
+    title: "Workflow and governance first",
     description:
-      "We optimize for partnerships that last years, not transactions that close this quarter. The right consultant matters more than placement volume.",
+      "AI value comes from workflow fit and disciplined governance, not model novelty. We optimize for outcomes you can measure.",
   },
 ];
 
@@ -33,8 +33,9 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h1 className="text-4xl font-bold">About Mended Health IT</h1>
           <p className="mt-4 max-w-2xl text-lg text-teal-100">
-            A healthcare transformation and advisory organization. We support
-            the operational complexity behind technology change.
+            An independent Healthcare AI Advisory and Brokerage practice. We help
+            leaders make practical, safe, and financially disciplined decisions
+            about AI.
           </p>
         </div>
       </section>
@@ -45,17 +46,17 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <h2 className="text-2xl font-bold text-slate-800">Our work</h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              Healthcare delivery doesn&apos;t pause for project plans. We
-              work with that reality, not against it. Our engagements focus on
-              EHR transitions, AI adoption, revenue cycle pressure,
-              interoperability mandates, and the staffing gaps that emerge
-              when all of the above land on the same operational leaders.
+              We are not an AI vendor. We are an independent advisor, broker, and
+              implementation connector. Healthcare leaders face a crowded AI market
+              and real pressure to act. We help them decide whether they are ready,
+              which use cases are worth funding, which vendors are credible, how to
+              govern risk, and what it takes to implement and prove ROI.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              We serve healthcare systems, health plans, Tribal organizations,
-              FQHCs, and healthcare operators. These are environments where
-              trust, continuity, and operational depth matter more than
-              vendor cycles or marketing polish.
+              The practice combines a healthcare-specific readiness framework,
+              vendor evaluation, governance design, and an implementation talent
+              bridge. That combination is what most organizations are missing as
+              AI moves from pilot to production.
             </p>
           </div>
         </div>
@@ -69,18 +70,15 @@ export default function AboutPage() {
               JC
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-slate-800">
-                Justin Cooper
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-800">Justin Cooper</h2>
               <p className="text-sm font-medium text-teal-700">Founder</p>
               <p className="mt-4 text-slate-600 leading-7">
-                Justin founded Mended Health IT to build the advisory firm he
-                wished existed when he was inside healthcare delivery
-                environments: a firm focused on operational continuity,
-                executive-level execution, and long-term trust rather than
-                transactional placements. He works directly with CIOs,
-                CMIOs, and revenue cycle leadership on the engagements where
-                outcomes matter most.
+                Justin founded Mended Health IT to give healthcare leaders the
+                independent guidance the AI market does not provide on its own:
+                vendor-neutral assessments, governance discipline, and a bridge to
+                the people who actually implement. He works directly with CIOs,
+                CMIOs, CNIOs, and revenue cycle and operations leadership on the
+                decisions where outcomes and risk matter most.
               </p>
             </div>
           </div>
@@ -96,9 +94,7 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
             {values.map((v) => (
               <div key={v.title} className="text-center">
-                <h3 className="text-lg font-semibold text-teal-700">
-                  {v.title}
-                </h3>
+                <h3 className="text-lg font-semibold text-teal-700">{v.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">
                   {v.description}
                 </p>

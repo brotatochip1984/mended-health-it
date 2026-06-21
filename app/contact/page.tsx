@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Schedule a Healthcare AI Readiness Call",
   description:
-    "Reach Mended Health IT about healthcare transformation, advisory, staffing, or stabilization engagements. Phoenix-based, supporting healthcare operators nationwide. We respond within one business day.",
+    "Schedule a Healthcare AI Readiness Call with Mended Health IT. Independent, vendor-neutral advice on AI readiness, vendor selection, governance, and implementation. We respond within one business day.",
 };
 
 export default async function ContactPage({
@@ -19,10 +19,11 @@ export default async function ContactPage({
       {/* Header */}
       <section className="bg-gradient-to-br from-teal-700 to-teal-900 py-16 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h1 className="text-4xl font-bold">Contact Us</h1>
+          <h1 className="text-4xl font-bold">Schedule a Healthcare AI Readiness Call</h1>
           <p className="mt-4 max-w-2xl text-lg text-teal-100">
-            Whether you&apos;re looking for talent or your next opportunity,
-            we&apos;d love to hear from you.
+            Tell us where you are with AI and what you are trying to solve. We
+            offer independent, vendor-neutral guidance and respond within one
+            business day.
           </p>
         </div>
       </section>
@@ -33,11 +34,11 @@ export default async function ContactPage({
             {/* Form */}
             <div className="lg:col-span-3">
               <h2 className="text-2xl font-bold text-slate-800">
-                Send Us a Message
+                Request your readiness call
               </h2>
               <p className="mt-2 text-sm text-slate-600">
-                Fill out the form below and we&apos;ll get back to you within
-                one business day.
+                Share a few details and we&apos;ll get back to you within one
+                business day.
               </p>
               <div className="mt-8">
                 <ContactForm defaultSubject={subject} />
