@@ -1,0 +1,131 @@
+{
+  "title": "Healthcare AI Readiness Assessment v1",
+  "scoreRange": {
+    "min": 0,
+    "max": 100
+  },
+  "tiers": [
+    {
+      "name": "Not Ready",
+      "min": 0,
+      "max": 39,
+      "description": "High risk. Start with governance, data, and workflow clarity."
+    },
+    {
+      "name": "Foundation Ready",
+      "min": 40,
+      "max": 59,
+      "description": "Some foundation exists. Prioritize low-risk administrative use cases."
+    },
+    {
+      "name": "Pilot Ready",
+      "min": 60,
+      "max": 74,
+      "description": "Ready for structured pilots with monitoring and human oversight."
+    },
+    {
+      "name": "Scale Ready",
+      "min": 75,
+      "max": 89,
+      "description": "Ready to expand validated use cases across departments."
+    },
+    {
+      "name": "Enterprise AI Mature",
+      "min": 90,
+      "max": 100,
+      "description": "Strong governance, integration, workforce, and monitoring capabilities."
+    }
+  ],
+  "categories": [
+    {
+      "name": "Strategy",
+      "weight": 10,
+      "questions": [
+        "Does the organization have a documented AI strategy?",
+        "Is there executive sponsorship for AI initiatives?",
+        "Are AI use cases tied to measurable business or clinical outcomes?"
+      ]
+    },
+    {
+      "name": "Data Readiness",
+      "weight": 10,
+      "questions": [
+        "Is core clinical and operational data accessible and reliable?",
+        "Does the organization have data governance standards?",
+        "Can data be integrated across EHR, claims, financial, and operational systems?"
+      ]
+    },
+    {
+      "name": "Technology Readiness",
+      "weight": 10,
+      "questions": [
+        "Does the organization have modern integration capabilities?",
+        "Are APIs, cloud, security, and identity controls mature enough for AI?",
+        "Can AI tools be embedded into existing workflows?"
+      ]
+    },
+    {
+      "name": "Workforce Readiness",
+      "weight": 10,
+      "questions": [
+        "Do clinicians and staff understand approved AI use?",
+        "Is there an AI literacy or training plan?",
+        "Are workflows designed around human-in-the-loop validation?"
+      ]
+    },
+    {
+      "name": "Governance & Compliance",
+      "weight": 15,
+      "questions": [
+        "Is there an AI governance committee or review board?",
+        "Are AI tools evaluated for accuracy, bias, privacy, and safety?",
+        "Is there a shadow-AI policy?"
+      ]
+    },
+    {
+      "name": "Use Case Prioritization",
+      "weight": 10,
+      "questions": [
+        "Are use cases prioritized by ROI, risk, workflow fit, and complexity?",
+        "Are high-burden / low-risk workflows identified?",
+        "Are pilot success metrics defined before purchase?"
+      ]
+    },
+    {
+      "name": "Vendor Readiness",
+      "weight": 10,
+      "questions": [
+        "Does the organization have a vendor evaluation process for AI?",
+        "Are vendors reviewed for evidence, references, security, and interoperability?",
+        "Are referral or commercial conflicts disclosed?"
+      ]
+    },
+    {
+      "name": "ROI Readiness",
+      "weight": 10,
+      "questions": [
+        "Can the organization measure baseline cost, time, quality, and access metrics?",
+        "Are savings assumptions tied to real operational data?",
+        "Is there an owner accountable for realizing benefits?"
+      ]
+    },
+    {
+      "name": "Implementation Capacity",
+      "weight": 10,
+      "questions": [
+        "Are PM, change management, analysts, integration, and clinical champions available?",
+        "Is there a plan for training, rollout, and support?",
+        "Is post-go-live optimization resourced?"
+      ]
+    },
+    {
+      "name": "Risk & Monitoring",
+      "weight": 5,
+      "questions": [
+        "Are post-deployment monitoring processes defined?",
+        "Are escalation paths defined for AI errors or safety issues?",
+        "Are model performance and user behavior reviewed regularly?"
+      ]
+    }
+  ]
+}

@@ -21,28 +21,30 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Healthcare IT,{" "}
-            <span className="text-amber-400">operated.</span>
+          <p className="text-sm font-semibold uppercase tracking-wide text-teal-300">
+            Vendor-neutral. Healthcare-specific.
+          </p>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Independent Healthcare AI{" "}
+            <span className="text-amber-400">Advisory &amp; Brokerage.</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-slate-200">
-            We support healthcare systems, health plans, Tribal organizations,
-            and FQHCs through complex EHR transitions, AI adoption,
-            interoperability, and revenue cycle pressure. With operators
-            who&apos;ve actually been on the floor.
+            We help healthcare organizations evaluate AI readiness, select trusted
+            vendors, govern risk, and build the teams to implement. Independent
+            advice in a crowded, fast-moving market.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="/contact"
+              href="/assessment"
               className="rounded-lg bg-amber-500 px-6 py-3 text-center font-semibold text-slate-900 shadow hover:bg-amber-400 transition-colors"
             >
-              Talk to us
+              Take the readiness assessment
             </Link>
             <Link
-              href="/services"
+              href="/contact"
               className="rounded-lg border border-white/30 px-6 py-3 text-center font-semibold text-white hover:bg-white/10 transition-colors"
             >
-              How we work
+              Schedule a call
             </Link>
           </div>
         </div>

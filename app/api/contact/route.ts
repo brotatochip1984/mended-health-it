@@ -30,17 +30,36 @@ export async function POST(request: Request) {
   const email = asString(form.get("email")).trim();
   const phone = asString(form.get("phone")).trim();
   const company = asString(form.get("company")).trim();
-  const inquiryType = asString(form.get("inquiryType")).trim();
+  const inquiryType = asString(form.get("inquiryType")).trim() || "advisory";
   const subject = asString(form.get("subject")).trim();
-  const message = asString(form.get("message")).trim();
   const linkedinUrl = asString(form.get("linkedinUrl")).trim();
+  const role = asString(form.get("role")).trim();
+  const aiInterest = asString(form.get("aiInterest")).trim();
+  const currentEhr = asString(form.get("currentEhr")).trim();
 
-  if (!name || !email || !inquiryType || !message) {
+  // The advisory contact form uses "painPoint" as the primary message. Fall back
+  // to a legacy "message" field so the endpoint stays backward compatible.
+  const message =
+    asString(form.get("painPoint")).trim() || asString(form.get("message")).trim();
+
+  if (!name || !email || !message) {
     return NextResponse.json(
       { error: "Missing required fields" },
       { status: 400 },
     );
   }
+
+  // Fold the structured advisory fields into the stored message so nothing is
+  // lost in the existing contact_submissions schema.
+  const storedMessage = [
+    aiInterest ? `AI interest area: ${aiInterest}` : null,
+    currentEhr ? `Current EHR: ${currentEhr}` : null,
+    role ? `Role: ${role}` : null,
+  ]
+    .filter((line): line is string => line !== null)
+    .concat(["", message])
+    .join("\n")
+    .trim();
 
   const supabase = getSupabaseAdmin();
 
@@ -96,7 +115,7 @@ export async function POST(request: Request) {
     company: company || null,
     inquiry_type: inquiryType,
     subject: subject || null,
-    message,
+    message: storedMessage,
     linkedin_url: linkedinUrl || null,
     attachment_path: attachmentPath,
     attachment_name: attachmentName,
@@ -120,6 +139,9 @@ export async function POST(request: Request) {
       subject,
       message,
       linkedinUrl,
+      role,
+      aiInterest,
+      currentEhr,
       attachment:
         attachmentBuffer && attachmentName
           ? { filename: attachmentName, content: attachmentBuffer }
