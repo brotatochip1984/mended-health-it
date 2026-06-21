@@ -20,6 +20,9 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // Consent lives in localStorage, so this must run after hydration (a lazy
+    // initializer would read it on the server and cause a mismatch).
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- hydration-safe read of persisted consent
     setVisible(getConsent() === null);
   }, []);
 
