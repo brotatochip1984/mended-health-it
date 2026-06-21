@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Claude Code harness dir (agent worktrees hold separate project copies).
+    ".claude/**",
   ]),
 ]);
 
